@@ -31,6 +31,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { Home } from './home.js'
+import { Voto } from './voto.js'
+import { MiembroDeMesa } from './miembroMesa.js'
 
 export default function App() {
   return (
@@ -66,15 +69,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Voto() {
-  return <h2>Voto responsable 2021</h2>;
-}
-
-function MiembroDeMesa() {
-  return <h2>¿Eres miembro de mesa?</h2>;
 }
