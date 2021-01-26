@@ -1,5 +1,6 @@
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
+import Header from './Header/Header.js';
 
 export function Voto() {
     const [slides, setSlides] = useState([]);
@@ -30,8 +31,10 @@ export function Voto() {
 
     return (
         <main>
+          <Header />
             <h2>Voto responsable 2021</h2>
             <section>{listSlides}</section>
         </main>
+        
     );
   }
