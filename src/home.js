@@ -1,6 +1,7 @@
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
 
+
 export function Home() {
 
   const [slides, setSlides] = useState([]);
