@@ -14,7 +14,6 @@ import { SearchBox } from './searchBox';
 import Contador from "./Contador.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 export default function App() {
   const [searchField, setSearchField] = useState('');
   //searchBar
