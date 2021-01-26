@@ -11,6 +11,8 @@ import { SearchResults } from './searchResults.js'
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
 import { SearchBox } from './searchBox';
+import Contador from "./Contador.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 export default function App() {
@@ -43,6 +45,8 @@ export default function App() {
         }
   return (
     <Router>
+  
+      
       <div>
         <nav>
           <ul>
@@ -73,6 +77,7 @@ export default function App() {
             {resultados(<Home posts={posts} setPosts={setPosts}/>)}
           </Route>
         </Switch>
+        <Contador />
       </div>
     </Router>
   );
