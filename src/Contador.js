@@ -42,18 +42,23 @@ function Message() {
 const Contador = () => {
   const [contador, setContador] = React.useState(0);
   // estado boolean para prevenir que haya mas de un gusta por boton o usar cooking cuando esta en la misma visita de pagina 
+  const [ disabled, setDisabled ] = React.useState("");
 
   const aumentar = () => {
-    console.log("click");
+    /* debe recibir como arg el id del post */
     setContador(contador + 1);
+    localStorage.setItem(contador, 'voted');
+    console.log(localStorage.getItem(contador));
+    
+    if(localStorage.getItem(contador)){
+      setDisabled("disabled")
+    }
   };
 
   return (
     <div className='divLike'>
-      <button onClick={() => aumentar()} className='btnLike'><img src={clapPic} alt={"like pic"} className='imgLike'/></button>
+      <button disabled={disabled} onClick={() => aumentar()} className='btnLike' type="button" ><img src={clapPic} alt={"like pic"} className='imgLike'/></button>
       <p className='contador'>{contador}</p>
-      {/*<Message/>
-      <h4>{contador > 1 ? "solo presionar una vez" : "Gracias por tu opinion"}</h4>*/}
     </div>
   );
 };

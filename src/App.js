@@ -15,7 +15,6 @@ import Nav from './Nav/Nav.js';
 
 /* import "bootstrap/dist/css/bootstrap.min.css"; */
 
-
 export default function App() {
   const [searchField, setSearchField] = useState('');
   //searchBar

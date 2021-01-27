@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button-print {
+  color: black;
+  font-size: 25px;
+  background-color: #EFECDE;
+  border:none;
+  outline: none;
+  font-size: 1.3rem;
+  padding-top: 3px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.button-print > img {
+  height: 25px;
+}

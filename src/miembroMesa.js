@@ -1,6 +1,7 @@
 import './voto.css';
 import { Share } from './share';
 import Contador from "./Contador.js";
+import printJS from 'print-js';
 
 export function MiembroDeMesa(props) {
   const mesaBanner = props.posts.filter((post)=>post.categoria==='mesa'&&post.tipo==='banner');
@@ -26,14 +27,17 @@ export function MiembroDeMesa(props) {
     </div>
     )
 
-    return (
-      <main className='mainVoto'>
+     return (
+      <main id="mainMiembroMesa" className='mainVoto'>
         <section className='bannerMesa'>{banner}</section>
         <section className='textosContainer'>{listTextos}</section>
         <section className='slideContainer'>{listSlides}</section>
         <section className='interactionContainer'>
           <Contador />
           <Share/>
+          <button onClick={ e => {
+                    printJS({ printable: 'mainMiembroMesa', type: 'html', header: 'Habla Fácil' })
+                }}></button>
         </section>
       </main>
     );
