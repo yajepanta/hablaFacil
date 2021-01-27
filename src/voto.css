@@ -133,10 +133,11 @@
 }
 .comentario{
     background-color: #EFECDE;
-    padding: 20px;
+    padding: 25px;
+    height: 700px;
  }
- ._5o4h ._1gl3 ._4jy0 ._4jy3 ._517h ._51sy ._42ft{
-     background: black;
+ .fb-comments button{
+     background-color: black;
  }
 
 
@@ -396,4 +397,11 @@
     border-top-width: 15px;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+.titleComentario {
+    font-size: 1.2rem;
+    font-family: "Regular";
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
 }
