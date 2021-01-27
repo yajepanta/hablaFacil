@@ -11,9 +11,13 @@ import SearchResults from './searchResults.js'
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
 import Contador from "./Contador.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { MasArticulos } from './masArticulos'
+
 import Nav from './Nav/Nav.js';
 
 /* import "bootstrap/dist/css/bootstrap.min.css"; */
+
 
 export default function App() {
   const [searchField, setSearchField] = useState('');
@@ -40,7 +44,12 @@ export default function App() {
           if(searchField.length>0) {
             return <SearchResults posts={posts} setPosts={setPosts} searchField={searchField}/>
           } else {
-            return componente;
+            return (
+            <div>
+              {componente}
+              <section className='masContainer'><MasArticulos posts={posts} setPosts={setPosts}/></section>
+            </div>
+            );
           }
         }
   return (

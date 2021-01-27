@@ -1,4 +1,5 @@
 import './voto.css';
+import { Share } from './share'
 
 export function Voto(props) {
 
@@ -25,8 +26,8 @@ export function Voto(props) {
     <div key={slide.id} className='texto'>
         <p className='titulo'>{slide.titulo}</p>
         <p className='subtitulo'> {slide.subtitulo}</p>
-        <div className='divImg'><img src={slide.img} alt={slide.id} className={slide.order===4 ? 'imgVoto1' : 'imgVoto2'}/></div>
         <p className='contenido'>{slide.contenido}</p>
+        <div className='divImg'><img src={slide.img} alt={slide.id} className={slide.order===4 ? 'imgVoto1' : 'imgVoto2'}/></div>
     </div> 
     )
    
@@ -43,6 +44,10 @@ export function Voto(props) {
             <section className='textosContainer'>{listTextos}</section>
             <section className='textoImgContainer'>{textoImg}</section>
             <section className='slideContainer'>{listSlides}</section>
+            <section className='interactionContainer'>
+                <div>Contador</div>
+                    <Share/>
+                </section>
         </main>
         
     );
