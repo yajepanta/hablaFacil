@@ -49,5 +49,6 @@ export function Voto(props) {
                     <Share/>
                 </section>
         </main>
+        
     );
   }

@@ -7,6 +7,7 @@ export function SearchResults(props) {
       <main className="mainResults">
         <p className="textResults">Resultados de "{props.searchField}"</p>
         <section>{
+          /* Retorna array de posts */
         // eslint-disable-next-line array-callback-return
         allPostsSearch.filter((post)=>{
           if(props.searchField===''){
@@ -32,3 +33,5 @@ export function SearchResults(props) {
       </main>
     );
   }
+
+  export default SearchResults;
