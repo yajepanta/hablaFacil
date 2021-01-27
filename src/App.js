@@ -7,12 +7,13 @@ import {
 import { Home } from './home.js'
 import { Voto } from './voto.js'
 import { MiembroDeMesa } from './miembroMesa.js'
-import { SearchResults } from './searchResults.js'
+import SearchResults from './searchResults.js'
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
-import { SearchBox } from './searchBox';
 import Contador from "./Contador.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from './Nav/Nav.js';
+
+/* import "bootstrap/dist/css/bootstrap.min.css"; */
 
 export default function App() {
   const [searchField, setSearchField] = useState('');
@@ -44,8 +45,7 @@ export default function App() {
         }
   return (
     <Router>
-  
-      
+      {Nav(searchField, setSearchField)}
       <div>
         <nav>
           <ul>
@@ -59,7 +59,6 @@ export default function App() {
               <Link to="/miembrodemesa">Miembro de mesa</Link>
             </li>
           </ul>
-          {SearchBox(setSearchField, searchField)}
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and

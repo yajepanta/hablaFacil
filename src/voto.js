@@ -44,5 +44,6 @@ export function Voto(props) {
             <section className='textoImgContainer'>{textoImg}</section>
             <section className='slideContainer'>{listSlides}</section>
         </main>
+        
     );
   }
