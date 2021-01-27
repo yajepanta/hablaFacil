@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family:"Quincy";
+    src: url('./quincy.ttf') format("truetype");
+  }
+
+@font-face {
+    font-family:"Regular";
+    src: url('./regular.ttf') format("truetype");
+  }
