@@ -1,5 +1,6 @@
 import './voto.css';
-import { Share } from './share'
+import { Share } from './share';
+import Contador from "./Contador.js";
 
 export function MiembroDeMesa(props) {
   const mesaBanner = props.posts.filter((post)=>post.categoria==='mesa'&&post.tipo==='banner');
@@ -31,7 +32,7 @@ export function MiembroDeMesa(props) {
         <section className='textosContainer'>{listTextos}</section>
         <section className='slideContainer'>{listSlides}</section>
         <section className='interactionContainer'>
-          <div>Contador</div>
+          <Contador />
           <Share/>
         </section>
       </main>

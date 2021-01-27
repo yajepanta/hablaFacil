@@ -1,8 +1,7 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { Home } from './home.js'
 import { Voto } from './voto.js'
@@ -10,7 +9,6 @@ import { MiembroDeMesa } from './miembroMesa.js'
 import SearchResults from './searchResults.js'
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
-import Contador from "./Contador.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MasArticulos } from './masArticulos'
 
@@ -40,10 +38,16 @@ export default function App() {
         }
         }, [])
 
-        const resultados = (componente) => {
+        const resultados = (componente, vista) => {
           if(searchField.length>0) {
             return <SearchResults posts={posts} setPosts={setPosts} searchField={searchField}/>
-          } else {
+          } else if(vista===false && searchField.length===0) {
+            return (
+              <div>
+                {componente}
+              </div>
+              );
+          } else{
             return (
             <div>
               {componente}
@@ -56,35 +60,20 @@ export default function App() {
     <Router>
       {Nav(searchField, setSearchField)}
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/voto">Voto responsable</Link>
-            </li>
-            <li>
-              <Link to="/miembrodemesa">Miembro de mesa</Link>
-            </li>
-          </ul>
-        </nav>
-
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
 
         <Switch>
           <Route path="/voto">
-            {resultados(<Voto posts={posts} setPosts={setPosts}/>)}
+            {resultados(<Voto posts={posts} setPosts={setPosts}/>, true)}
           </Route>
           <Route path="/miembrodemesa">
-            {resultados(<MiembroDeMesa posts={posts} setPosts={setPosts}/>)}
+            {resultados(<MiembroDeMesa posts={posts} setPosts={setPosts}/>, true)}
           </Route>
           <Route path="/">
-            {resultados(<Home posts={posts} setPosts={setPosts}/>)}
+            {resultados(<Home posts={posts} setPosts={setPosts}/>, false)}
           </Route>
         </Switch>
-        <Contador />
       </div>
     </Router>
   );

@@ -20,7 +20,8 @@
 .nav-link{
     color: #071717 !important;
     padding: 12px 0;
-    
+    font-family: 'Quincy';
+    font-size: 1.2rem;
 }
 
 .mt-lg-0 {

@@ -1,5 +1,6 @@
 import './voto.css';
 import { Share } from './share'
+import Contador from "./Contador.js";
 
 export function Voto(props) {
 
@@ -45,9 +46,9 @@ export function Voto(props) {
             <section className='textoImgContainer'>{textoImg}</section>
             <section className='slideContainer'>{listSlides}</section>
             <section className='interactionContainer'>
-                <div>Contador</div>
-                    <Share/>
-                </section>
+                <Contador />
+                <Share/>
+            </section>
         </main>
         
     );

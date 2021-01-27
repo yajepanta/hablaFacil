@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React} from "react";
 import "./Nav.css";
 import logoSecundary from "../assets/img/logo-secundary.png";
 
@@ -29,8 +29,8 @@ const Nav = (searchField, setSearchField) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#">
-                Elecciones
+              <a className="nav-link" href="/voto">
+                Elecciones 2021
               </a>
             </li>
             <li className="nav-item">
