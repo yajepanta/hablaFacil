@@ -1,0 +1,33 @@
+.bg-dark{
+    background-color: #071717 !important; 
+    padding: 0px 15px 0 0;
+}
+.navbar-brand{
+    padding: 0;
+}
+.navbar-toggler-icon{
+    background-image: url('../assets/img/menu.png') !important;
+}
+.navbar-collapse{
+    background-color: #FFFFFF !important;
+    margin: 0 -18px -9px -18px;  
+}
+
+.nav-item{
+    border: #DFDFDF 1px solid;    
+    padding-left: 40px;
+}
+.nav-link{
+    color: #071717 !important;
+    padding: 12px 0;
+    font-family: 'Quincy';
+    font-size: 1.2rem;
+}
+
+.mt-lg-0 {
+    margin: 0px !important;
+}
+
+.form-inline {
+    margin: 10px 25px 15px 25px !important;
+}

@@ -32,6 +32,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
 }
 .cardTexto{
     padding-left: 20px;

@@ -1,4 +1,6 @@
-import "./voto.css";
+import './voto.css';
+import { Share } from './share'
+import Contador from "./Contador.js";
 
 export function Voto(props) {
   const votoBanner = props.posts.filter(
@@ -42,7 +44,6 @@ export function Voto(props) {
       <p className="contenido">{slide.contenido}</p>
     </div>
   ));
-
   const listSlides = votoSlides.map((slide) => (
     <div key={slide.id} className="slide">
       <div>
@@ -58,6 +59,10 @@ export function Voto(props) {
       <section className="textosContainer">{listTextos}</section>
       <section className="textoImgContainer">{textoImg}</section>
       <section className="slideContainer">{listSlides}</section>
+      <section className='interactionContainer'>
+                <Contador />
+                <Share/>
+            </section>
       <section className="comentario">
         <div
           className="fb-comments"
