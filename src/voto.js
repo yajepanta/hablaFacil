@@ -62,7 +62,7 @@ export function Voto(props) {
       <section className='interactionContainer'>
                 <Contador />
                 <Share/>
-            </section>
+      </section>
       <section className="comentario">
         <div
           className="fb-comments"
