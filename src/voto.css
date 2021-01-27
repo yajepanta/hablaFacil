@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .slide {
@@ -86,14 +86,25 @@
     margin-bottom: 20px;
     font-size: 17px;
 }
-.imgVoto {
+.divImg{
+    display: flex;
+    justify-content: center;
+}
+.imgVoto2 {
     width: 260px;
     height: 180px;
     border-radius: 12px;
     margin-left: auto;
     margin-right: auto;
 }
-.imgSlide {
+.imgVoto1 {
+    width: 320px;
+    height: 450px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgSlide2 {
     width: 30px;
     height: 30px;
     margin-left: auto;

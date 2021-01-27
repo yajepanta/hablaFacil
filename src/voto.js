@@ -25,7 +25,7 @@ export function Voto(props) {
     <div key={slide.id} className='texto'>
         <p className='titulo'>{slide.titulo}</p>
         <p className='subtitulo'> {slide.subtitulo}</p>
-        <img src={slide.img} alt={slide.id} className='imgVoto'/>
+        <div className='divImg'><img src={slide.img} alt={slide.id} className={slide.order===4 ? 'imgVoto1' : 'imgVoto2'}/></div>
         <p className='contenido'>{slide.contenido}</p>
     </div> 
     )
