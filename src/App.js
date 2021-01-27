@@ -13,6 +13,7 @@ import firebase from './firebase';
 import { SearchBox } from './searchBox';
 import Contador from "./Contador.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { MasArticulos } from './masArticulos'
 
 export default function App() {
   const [searchField, setSearchField] = useState('');
@@ -39,7 +40,12 @@ export default function App() {
           if(searchField.length>0) {
             return <SearchResults posts={posts} setPosts={setPosts} searchField={searchField}/>
           } else {
-            return componente;
+            return (
+            <div>
+              {componente}
+              <section className='masContainer'><MasArticulos posts={posts} setPosts={setPosts}/></section>
+            </div>
+              );
           }
         }
   return (

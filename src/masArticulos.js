@@ -1,20 +1,14 @@
 import './searchResult.css';
 
-export function SearchResults(props) {
+export function MasArticulos(props) {
   const allPostsSearch = props.posts.filter((post)=>post.categoria==='buscar');
 
     return (
       <main className="mainResults">
-        <p className="textResults">Resultados de "{props.searchField}"</p>
+        <p className='subtituloMas'>Más articulos sobre este tema</p>
         <section>{
         // eslint-disable-next-line array-callback-return
-        allPostsSearch.filter((post)=>{
-          if(props.searchField===''){
-            return post
-          } else if(post.contenido.toLowerCase().includes(props.searchField.toLowerCase())) {
-            return post
-          }
-        }).map((slide)=> 
+        allPostsSearch.map((slide)=> 
         <div className="divCard" key={slide.id}>
             <img src={slide.img} className="cardImg" alt={slide.id}/>
             <div className="cardContent">

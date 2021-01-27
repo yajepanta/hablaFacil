@@ -17,6 +17,21 @@
     border-bottom-width: 2px ;
 }
 
+.bannerMesa {
+    background:linear-gradient(0deg,  #EFECDE, #fcfcfc20, #fcfcfc15), url('./mesa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 310px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-style: hidden;
+    border-bottom-color: #333333;
+    border-bottom-style: solid;
+    border-bottom-width: 2px ;
+}
+
 .slideContainer {
     width: 90vw;
     display: flex;
@@ -78,17 +93,18 @@
     font-weight: bold;
 }
 .subtitulo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "Regular";
     font-weight: bold;
 }
 .contenido{
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 1.2rem;
 }
 .divImg{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 .imgVoto2 {
     width: 260px;
@@ -109,4 +125,37 @@
     height: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.interactionContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top-width: 4px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.compartir{
+    display: flex;
+    flex-direction: column;
+}
+
+.masContainer {
+    width: 100vw;
+    padding: 5vw;
+    padding-top: 20px;
+    background-color: #EFECDE;
+}
+
+.subtituloMas {
+    font-size: 1.3rem;
+    font-family: "Regular";
+    font-weight: bold;
+    border-style: hidden;
+    border-color:#333333;
+    border-bottom-style: solid ;
 }
