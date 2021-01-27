@@ -11,7 +11,6 @@ import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MasArticulos } from './masArticulos'
-
 import Nav from './Nav/Nav.js';
 
 /* import "bootstrap/dist/css/bootstrap.min.css"; */
@@ -72,6 +71,8 @@ export default function App() {
           </Route>
           <Route path="/">
             {resultados(<Home posts={posts} setPosts={setPosts}/>, false)}
+          </Route>
+          <Route path="/quienessomos">
           </Route>
         </Switch>
       </div>
