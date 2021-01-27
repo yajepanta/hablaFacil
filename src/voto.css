@@ -1,0 +1,112 @@
+.mainVoto {
+   background-color: #EFECDE; 
+}
+
+.banner {
+    background:linear-gradient(0deg,  #EFECDE, #fcfcfc20, #fcfcfc15), url('./votoBanner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 310px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-style: hidden;
+    border-bottom-color: #333333;
+    border-bottom-style: solid;
+    border-bottom-width: 2px ;
+}
+
+.slideContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-style: hidden;
+    border-top-color: #333333;
+    border-top-style: solid;
+    border-top-width: 4px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.slide {
+    background-color: #C5C2B9;
+    padding:15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 40vw;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.textosContainer {
+    margin: 5vw;
+    border-style: hidden;
+    border-top-color: #333333;
+    border-top-style: solid;
+    border-top-width: 15px;
+    padding-top: 20px;
+}
+.textoImgContainer {
+    margin: 5vw;
+    padding-top: 20px;
+}
+
+.tituloBanner {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 330px;
+    margin-left: 25px;
+    font-family: "Regular";
+    font-weight: bolder;
+}
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: "Regular";
+    font-weight: bold;
+}
+.subtitulo {
+    font-size: 1.2rem;
+    font-family: "Regular";
+    font-weight: bold;
+}
+.contenido{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.divImg{
+    display: flex;
+    justify-content: center;
+}
+.imgVoto2 {
+    width: 260px;
+    height: 180px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgVoto1 {
+    width: 320px;
+    height: 450px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgSlide2 {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

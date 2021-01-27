@@ -1,0 +1,53 @@
+.mainResults {
+    padding-top: 5px;
+}
+
+.card-title{
+    margin-top: 1rem;
+}
+p{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+.textResults{
+    margin: 5vw;
+    font-size: 25px;
+    font-family: 'Regular';
+}
+.divCard {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+.cardImg{
+    width: 65vw;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardTexto{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.cardContenido {
+    font-size: 18px;
+}
+.cardTitulo{
+    font-size: 20px;
+}
+.cardFooter {
+    color: #4F4F4F;
+    margin: 0%;
+    padding-left: 20px;
+    font-size: 16px;
+}
