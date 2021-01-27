@@ -39,6 +39,16 @@ export function MiembroDeMesa(props) {
                     printJS({ printable: 'mainMiembroMesa', type: 'html', header: 'Habla Fácil' })
                 }}></button>
         </section>
+        <section className="comentario">
+      <p className="titleComentario">¿Te sirvió la publicación? Dejanos tu comentario</p>
+        <div
+          className="fb-comments"
+          data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+          data-width="150"
+          data-numposts="4"
+          data-colorscheme="dark"
+        ></div>
+      </section>
       </main>
     );
   }

@@ -10,8 +10,8 @@ export function ToVoto() {
     }
   
     return (
-      <button type="submit" onClick={handleClickToVoto}>
-        Ver más
+      <button type="submit" onClick={handleClickToVoto} className='btnTo'>
+        Leer Post
       </button>
     );
   }

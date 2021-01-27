@@ -10,8 +10,8 @@ export function ToMesa() {
     }
   
     return (
-      <button type="submit" onClick={handleClickToMesa}>
-        Ver más
+      <button type="submit" onClick={handleClickToMesa} className='btnTo'>
+        Leer Post
       </button>
     );
   }
