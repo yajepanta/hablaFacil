@@ -128,7 +128,7 @@
 }
 
 .interactionContainer {
-    width: 90vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,3 +159,37 @@
     border-color:#333333;
     border-bottom-style: solid ;
 }
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.itemMenu{
+    margin-left: 15px;
+    margin-bottom: 0%;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.itemMenuTitle{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    padding-top: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.imgCompartir{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    position: absolute;
+    top: 12px;
+    left: 120px;
+}
+.imgItems{
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    margin-top: 5px;
+}
+
+
