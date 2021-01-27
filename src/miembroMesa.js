@@ -1,6 +1,8 @@
 import './voto.css';
 import { Share } from './share';
 import Contador from "./Contador.js";
+import printJS from 'print-js';
+import buttonPrint from './printer.svg';
 
 export function MiembroDeMesa(props) {
   const mesaBanner = props.posts.filter((post)=>post.categoria==='mesa'&&post.tipo==='banner');
@@ -27,13 +29,16 @@ export function MiembroDeMesa(props) {
     )
 
     return (
-      <main className='mainVoto'>
+      <main className='mainVoto' id='mainVoto'>
         <section className='bannerMesa'>{banner}</section>
         <section className='textosContainer'>{listTextos}</section>
         <section className='slideContainer'>{listSlides}</section>
         <section className='interactionContainer'>
-          <Contador />
+          <Contador/>
           <Share/>
+          <button className="button-print" onClick={ e => {
+            printJS({ printable: 'mainVoto', type: 'html', header: 'Habla Fácil' })
+                }}>Imprimir <img src={buttonPrint} alt="button-print"></img></button>
         </section>
         <section className="comentario">
       <p className="titleComentario">¿Te sirvió la publicación? Dejanos tu comentario</p>
