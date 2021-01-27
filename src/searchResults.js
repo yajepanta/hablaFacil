@@ -1,9 +1,10 @@
-export function SearchResults(props) {
+function SearchResults(props) {
   const allPosts = props.posts;
     return (
       <main>
         <h2>Resultados</h2>
         <section>{
+          /* Retorna array de posts */
         // eslint-disable-next-line array-callback-return
         allPosts.filter((post)=>{
           if(props.searchField===''){
@@ -22,3 +23,5 @@ export function SearchResults(props) {
       </main>
     );
   }
+
+  export default SearchResults;
