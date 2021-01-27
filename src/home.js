@@ -1,7 +1,6 @@
 import { ToVoto } from './toVoto.js';
 import { ToMesa } from './toMesa.js'
 import Banner from './Header/Banner.js';
-import SharePost from './SharePost/SharePost.js';
 
 export function Home(props) {
 
@@ -19,7 +18,6 @@ export function Home(props) {
       <main>
         <Banner />
         <section>{listSlides}</section>
-        <SharePost />
       </main>
     );
   }
