@@ -10,7 +10,6 @@ import { MiembroDeMesa } from './miembroMesa.js'
 import SearchResults from './searchResults.js'
 import { useState, useEffect, React } from 'react';
 import firebase from './firebase';
-import { SearchBox } from './searchBox';
 import Contador from "./Contador.js";
 import Nav from './Nav/Nav.js';
 
