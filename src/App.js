@@ -45,13 +45,11 @@ export default function App() {
               {componente}
               <section className='masContainer'><MasArticulos posts={posts} setPosts={setPosts}/></section>
             </div>
-              );
+            );
           }
         }
   return (
     <Router>
-  
-      
       <div>
         <nav>
           <ul>
