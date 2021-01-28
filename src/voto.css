@@ -145,8 +145,8 @@
     width: 85vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border-top-width: 4px ;
+    flex-wrap: wrap;
+    justify-content:space-between;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -177,6 +177,8 @@
 .flex{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 290px;
 }
 .itemMenu{
     margin-left: 15px;
@@ -187,17 +189,17 @@
 .itemMenuTitle{
     margin-left: 10px;
     font-size: 1.25rem;
-    padding-top: 6px;
     text-decoration: underline;
     font-weight: bold;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
 }
 .imgCompartir{
     width: 25px;
     height: 25px;
-    margin-left: 15px;
-    position: absolute;
-    top: 17px;
-    left: 110px;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 .imgItems{
     width: 25px;
@@ -219,11 +221,9 @@
     flex-direction: row;
 }
 .contador{
-    margin-left: 5px;
     font-size: 1.3rem;
     padding-top: 3px;
     font-weight: bold;
-    margin-top: 7px;
 }
 
 
@@ -255,8 +255,8 @@
 }
 .cardTituloHome1{
     background:url('./home1.png');
-    background-position-x: 275px;
-    background-position-y: 105px;
+    background-position-x: right;
+    background-position-y: bottom;
     background-size: 35%;
     background-repeat: no-repeat;
     width: 90vw;
@@ -286,8 +286,8 @@
 }
 .cardTituloHome2{
     background:url('./home2.png');
-    background-position-x: 280px;
-    background-position-y: 95px;
+    background-position-x: right;
+    background-position-y: bottom;
     background-size: 35%;
     background-repeat: no-repeat;
     width: 90vw;
