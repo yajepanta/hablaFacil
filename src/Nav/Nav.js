@@ -31,7 +31,7 @@ const Nav = (searchField, setSearchField) => {
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item active" onClick={goToVoto()}>
+            <li className="nav-item active" onClick={goToHome()}>
               <p className="nav-link">
                 Home <span className="sr-only">(current)</span>
               </p>
