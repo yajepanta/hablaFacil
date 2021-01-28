@@ -12,38 +12,38 @@ function ImgClap () {
     }
 }
 let enable='true';
-const ContadorHome = () => {
-  const [countHome, setCountHome] = useState(0);
+const ContadorHome2 = () => {
+  const [countHome2, setCountHome2] = useState(0);
 
   const increase = () => {
     if(enable==='true'){
-      setCountHome(prevCountHome => {
-        const newCountHome = Number(prevCountHome) + 1;
-        localStorage.setItem("countHome", newCountHome);
+      setCountHome2(prevCountHome2 => {
+        const newCountHome2 = Number(prevCountHome2) + 1;
+        localStorage.setItem("countHome2", newCountHome2);
         status = 'clicked';
         enable = 'false';
-        return newCountHome;
+        return newCountHome2;
       });
     } else{
-      setCountHome(prevCountHome => {
-        return prevCountHome;
+      setCountHome2(prevCountHome2 => {
+        return prevCountHome2;
       });
     }
   };
   
   useEffect(() => {
-    const initialValueHome = localStorage.getItem("countHome");
-    if (initialValueHome) setCountHome(initialValueHome);
+    const initialValueHome2 = localStorage.getItem("countHome2");
+    if (initialValueHome2) setCountHome2(initialValueHome2);
   }, []);
 
   return (
     <div className='divLikeHome'>
       <button onClick={() => increase()} className='btnLikeHome'><ImgClap/></button>
-      <p className='contadorHome'>{countHome}</p>
+      <p className='contadorHome'>{countHome2}</p>
       {/*<Message/>
       <h4>{contador > 1 ? "solo presionar una vez" : "Gracias por tu opinion"}</h4>*/}
     </div>
   );
 };
 
-export default ContadorHome;
+export default ContadorHome2;
