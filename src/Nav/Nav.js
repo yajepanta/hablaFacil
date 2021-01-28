@@ -1,8 +1,16 @@
-import {React} from "react";
+import {React, useHistory} from "react";
 import "./Nav.css";
 import logoSecundary from "../assets/img/logo-secundary.png";
 
 const Nav = (searchField, setSearchField) => {
+  let history = useHistory();
+  
+    function goToVoto() {
+      history.push("/voto");
+    }
+    function goToHome() {
+      history.push("/");
+    }
 
   return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,15 +31,15 @@ const Nav = (searchField, setSearchField) => {
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item active">
-              <a className="nav-link" href="/hablaFacil">
+            <li className="nav-item active" onClick={goToVoto()}>
+              <p className="nav-link">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </p>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/voto">
+            <li className="nav-item" onClick={goToVoto()}>
+              <p className="nav-link">
                 Elecciones 2021
-              </a>
+              </p>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/hablaFacil">
