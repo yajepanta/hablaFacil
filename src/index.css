@@ -22,7 +22,15 @@ code {
   padding-top: 3px;
   text-decoration: underline;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  padding-top: 5px;
 }
 .button-print > img {
   height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  margin-top: 3px;
 }
+

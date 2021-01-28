@@ -1,6 +1,6 @@
 import './voto.css';
 import { Share } from './share';
-import Contador from "./Contador.js";
+import Contador2 from "./Contador2.js";
 import printJS from 'print-js';
 
 export function MiembroDeMesa(props) {
@@ -33,7 +33,7 @@ export function MiembroDeMesa(props) {
         <section className='textosContainer'>{listTextos}</section>
         <section className='slideContainer'>{listSlides}</section>
         <section className='interactionContainer'>
-          <Contador />
+          <Contador2/>
           <Share/>
           <button onClick={ e => {
                     printJS({ printable: 'mainMiembroMesa', type: 'html', header: 'Habla Fácil' })

@@ -14,38 +14,38 @@ function ImgClap () {
 }
 
 let enable='true';
-const Contador = () => {
-  const [count, setCount] = useState(0);
+const Contador2 = () => {
+  const [count2, setCount2] = useState(0);
   const increase = () => {
     if(enable==='true'){
-      setCount(prevCount => {
-        const newCount = Number(prevCount) + 1;
-        localStorage.setItem("count", newCount);
+      setCount2(prevCount2 => {
+        const newCount2 = Number(prevCount2) + 1;
+        localStorage.setItem("count2", newCount2);
         status = 'clicked';
         enable = 'false';
-        return newCount;
+        return newCount2;
       });
     } else{
-      setCount(prevCount => {
-        return prevCount;
+      setCount2(prevCount2 => {
+        return prevCount2;
       });
     }
   };
   
   useEffect(() => {
-    const initialValue = localStorage.getItem("count");
-    if (initialValue) setCount(initialValue);
+    const initialValue2 = localStorage.getItem("count2");
+    if (initialValue2) setCount2(initialValue2);
   }, []);
 
 
   return (
     <div className='divLike'>
       <button onClick={() => increase()} className='btnLike'><ImgClap/></button>
-      <p className='contador'>{count}</p>
+      <p className='contador'>{count2}</p>
       {/*<Message/>
       <h4>{contador > 1 ? "solo presionar una vez" : "Gracias por tu opinion"}</h4>*/}
     </div>
   );
 };
 
-export default Contador;
+export default Contador2;
