@@ -72,8 +72,8 @@ export function Share () {
     `}
      </style>
         <DropdownButton id="dropdown-basic-button" title={
-                    <div className='flex'>
-                        <p className='itemMenuTitle'>Compartir</p>
+                    <div className='itemMenuTitle'>
+                        <p>Compartir</p>
                         <img 
                             src={sharePic}
                             alt={"user pic"}

@@ -63,10 +63,12 @@ export function Voto(props) {
       <section className="slideContainer">{listSlides}</section>
       <section className='interactionContainer'>
         <Contador/>
+        <div className='flex'>
         <Share/>
         <button className="button-print" onClick={ e => {
             printJS({ printable: 'mainVoto', type: 'html', header: 'Habla Fácil' })
                 }}>Imprimir <img src={buttonPrint} alt="button-print"></img></button>
+        </div>
       </section>
       <section className="comentario">
       <p className="titleComentario">¿Te sirvió la publicación? Dejanos tu comentario</p>
