@@ -3,6 +3,7 @@ import { Share } from './share'
 import Contador from "./Contador.js";
 import printJS from 'print-js';
 import buttonPrint from './assets/img/printer.png';
+import Footer from './Footer/Footer.js';
 
 export function Voto(props) {
   const votoBanner = props.posts.filter(
@@ -75,6 +76,7 @@ export function Voto(props) {
           data-colorscheme="dark"
         ></div>
       </section>
+      <Footer ></Footer>
     </main>
   );
 }

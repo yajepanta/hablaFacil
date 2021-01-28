@@ -19,16 +19,7 @@ const Contador = () => {
   const aumentar = () => {
     /* debe recibir como arg el id del post */
     setContador(contador + 1);
-<<<<<<< HEAD
-    localStorage.setItem(contador, 'voted');
-    console.log(localStorage.getItem(contador));
-    
-    if(localStorage.getItem(contador)){
-      setDisabled("disabled")
-    }
-=======
     status = 'clicked';
->>>>>>> 341b0b3484441205fda1b68fa9bcf192d09c34ae
   };
 
   return (

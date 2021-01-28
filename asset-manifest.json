@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/LauraJimenezB/hablaFacil.git/static/css/main.57212785.chunk.css",
+    "main.js": "/LauraJimenezB/hablaFacil.git/static/js/main.45df30f3.chunk.js",
+    "main.js.map": "/LauraJimenezB/hablaFacil.git/static/js/main.45df30f3.chunk.js.map",
+    "runtime-main.js": "/LauraJimenezB/hablaFacil.git/static/js/runtime-main.cc4d226c.js",
+    "runtime-main.js.map": "/LauraJimenezB/hablaFacil.git/static/js/runtime-main.cc4d226c.js.map",
+    "static/css/2.150d169a.chunk.css": "/LauraJimenezB/hablaFacil.git/static/css/2.150d169a.chunk.css",
+    "static/js/2.997806f5.chunk.js": "/LauraJimenezB/hablaFacil.git/static/js/2.997806f5.chunk.js",
+    "static/js/2.997806f5.chunk.js.map": "/LauraJimenezB/hablaFacil.git/static/js/2.997806f5.chunk.js.map",
+    "static/js/3.49d465be.chunk.js": "/LauraJimenezB/hablaFacil.git/static/js/3.49d465be.chunk.js",
+    "static/js/3.49d465be.chunk.js.map": "/LauraJimenezB/hablaFacil.git/static/js/3.49d465be.chunk.js.map",
+    "index.html": "/LauraJimenezB/hablaFacil.git/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/LauraJimenezB/hablaFacil.git/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.57212785.chunk.css.map": "/LauraJimenezB/hablaFacil.git/static/css/main.57212785.chunk.css.map",
+    "static/js/2.997806f5.chunk.js.LICENSE.txt": "/LauraJimenezB/hablaFacil.git/static/js/2.997806f5.chunk.js.LICENSE.txt",
+    "static/media/clap.9caa0f6e.svg": "/LauraJimenezB/hablaFacil.git/static/media/clap.9caa0f6e.svg",
+    "static/media/clapWhite.e4ff51cb.svg": "/LauraJimenezB/hablaFacil.git/static/media/clapWhite.e4ff51cb.svg",
+    "static/media/email.8053326d.svg": "/LauraJimenezB/hablaFacil.git/static/media/email.8053326d.svg",
+    "static/media/facebook.68937954.svg": "/LauraJimenezB/hablaFacil.git/static/media/facebook.68937954.svg",
+    "static/media/voto.css": "/LauraJimenezB/hablaFacil.git/static/media/votoBanner.99344ab7.png",
+    "static/media/linkedin.b6350964.svg": "/LauraJimenezB/hablaFacil.git/static/media/linkedin.b6350964.svg",
+    "static/media/logoHome.7986b0aa.svg": "/LauraJimenezB/hablaFacil.git/static/media/logoHome.7986b0aa.svg",
+    "static/media/printer.5b99709c.svg": "/LauraJimenezB/hablaFacil.git/static/media/printer.5b99709c.svg",
+    "static/media/share.8d8d82b3.svg": "/LauraJimenezB/hablaFacil.git/static/media/share.8d8d82b3.svg",
+    "static/media/twitter.536733a8.svg": "/LauraJimenezB/hablaFacil.git/static/media/twitter.536733a8.svg",
+    "static/media/whatsapp.d6f5f814.svg": "/LauraJimenezB/hablaFacil.git/static/media/whatsapp.d6f5f814.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc4d226c.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.997806f5.chunk.js",
+    "static/css/main.57212785.chunk.css",
+    "static/js/main.45df30f3.chunk.js"
+  ]
+}
