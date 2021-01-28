@@ -3,6 +3,7 @@ import clapPic from './clapWhite.svg'
 import clapPicSelect from './clap.svg'
 import { useState, useEffect } from "react";
 
+
 let status = 'notclicked';
 function ImgClap () {
     if(status==='notclicked') {
@@ -11,39 +12,40 @@ function ImgClap () {
         return (<img src={clapPicSelect} alt={"like pic"} className='imgLikeHome'/>);
     }
 }
-let enable='true';
-const ContadorHome = () => {
-  const [countHome, setCountHome] = useState(0);
 
+let enable='true';
+const Contador2 = () => {
+  const [count2, setCount2] = useState(0);
   const increase = () => {
     if(enable==='true'){
-      setCountHome(prevCountHome => {
-        const newCountHome = Number(prevCountHome) + 1;
-        localStorage.setItem("countHome", newCountHome);
+      setCount2(prevCount2 => {
+        const newCount2 = Number(prevCount2) + 1;
+        localStorage.setItem("count2", newCount2);
         status = 'clicked';
         enable = 'false';
-        return newCountHome;
+        return newCount2;
       });
     } else{
-      setCountHome(prevCountHome => {
-        return prevCountHome;
+      setCount2(prevCount2 => {
+        return prevCount2;
       });
     }
   };
   
   useEffect(() => {
-    const initialValueHome = localStorage.getItem("countHome");
-    if (initialValueHome) setCountHome(initialValueHome);
+    const initialValue2 = localStorage.getItem("count2");
+    if (initialValue2) setCount2(initialValue2);
   }, []);
 
+
   return (
-    <div className='divLikeHome'>
-      <button onClick={() => increase()} className='btnLikeHome'><ImgClap/></button>
-      <p className='contadorHome'>{countHome}</p>
+    <div className='divLike'>
+      <button onClick={() => increase()} className='btnLike'><ImgClap/></button>
+      <p className='contador'>{count2}</p>
       {/*<Message/>
       <h4>{contador > 1 ? "solo presionar una vez" : "Gracias por tu opinion"}</h4>*/}
     </div>
   );
 };
 
-export default ContadorHome;
+export default Contador2;

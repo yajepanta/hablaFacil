@@ -1,7 +1,8 @@
 import { ToVoto } from './toVoto.js';
 import { ToMesa } from './toMesa.js'
 import logoHome from './logoHome.svg'
-import Contador from "./ContadorHome.js";
+import ContadorHome from "./ContadorHome.js";
+import ContadorHome2 from "./ContadorHome2.js";
 
 export function Home(props) {
 
@@ -27,7 +28,7 @@ export function Home(props) {
               </div>
               <div className="cardFooterHome">
                 {slide.order===1 ? <ToVoto/> : <ToMesa/>}
-                <Contador/>
+                {slide.order===1 ? <ContadorHome/> : <ContadorHome2/>}
               </div>
             </div>
         </div>

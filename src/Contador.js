@@ -1,6 +1,8 @@
 import React from "react";
 import clapPic from './clapWhite.svg'
 import clapPicSelect from './clap.svg'
+import { useState, useEffect } from "react";
+
 
 let status = 'notclicked';
 function ImgClap () {
@@ -11,20 +13,35 @@ function ImgClap () {
     }
 }
 
+let enable='true';
 const Contador = () => {
-  const [contador, setContador] = React.useState(0);
-  // estado boolean para prevenir que haya mas de un gusta por boton o usar cooking cuando esta en la misma visita de pagina 
-
-  const aumentar = () => {
-    console.log("click");
-    setContador(contador + 1);
-    status = 'clicked';
+  const [count, setCount] = useState(0);
+  const increase = () => {
+    if(enable==='true'){
+      setCount(prevCount => {
+        const newCount = Number(prevCount) + 1;
+        localStorage.setItem("count", newCount);
+        status = 'clicked';
+        enable = 'false';
+        return newCount;
+      });
+    } else{
+      setCount(prevCount => {
+        return prevCount;
+      });
+    }
   };
+  
+  useEffect(() => {
+    const initialValue = localStorage.getItem("count");
+    if (initialValue) setCount(initialValue);
+  }, []);
+
 
   return (
     <div className='divLike'>
-      <button onClick={() => aumentar()} className='btnLike'><ImgClap/></button>
-      <p className='contador'>{contador}</p>
+      <button onClick={() => increase()} className='btnLike'><ImgClap/></button>
+      <p className='contador'>{count}</p>
       {/*<Message/>
       <h4>{contador > 1 ? "solo presionar una vez" : "Gracias por tu opinion"}</h4>*/}
     </div>

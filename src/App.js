@@ -7,12 +7,12 @@ import { Home } from './home.js'
 import { Voto } from './voto.js'
 import { MiembroDeMesa } from './miembroMesa.js'
 import SearchResults from './searchResults.js'
-import { useState, useEffect, React } from 'react';
-import firebase from './firebase';
-import "bootstrap/dist/css/bootstrap.min.css";
+import { useState, useEffect, React } from 'react'
+import firebase from './firebase'
+import "bootstrap/dist/css/bootstrap.min.css"
 import { MasArticulos } from './masArticulos'
-
-import Nav from './Nav/Nav.js';
+import { FooterH } from './footer.js'
+import Nav from './Nav/Nav.js'
 
 /* import "bootstrap/dist/css/bootstrap.min.css"; */
 
@@ -75,6 +75,7 @@ export default function App() {
           </Route>
         </Switch>
       </div>
+      <FooterH />
     </Router>
   );
 }
