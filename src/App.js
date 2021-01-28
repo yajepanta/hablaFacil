@@ -70,7 +70,7 @@ export default function App() {
           <Route path="/miembrodemesa">
             {resultados(<MiembroDeMesa posts={posts} setPosts={setPosts}/>, true)}
           </Route>
-          <Route path="/">
+          <Route path="/home">
             {resultados(<Home posts={posts} setPosts={setPosts}/>, false)}
           </Route>
         </Switch>

@@ -9,7 +9,7 @@ const Nav = (searchField, setSearchField) => {
       history.push("/voto");
     }
     function goToHome() {
-      history.push("/");
+      history.push("/home");
     }
 
   return (
